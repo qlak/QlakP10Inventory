@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">QlakP10Inventory</string>
+
+    <string name="no_description">Description Unavailable</string>
+    <string name="quantity">Quantity: </string>
+    <string name="price">Price: </string>
+
+</resources>

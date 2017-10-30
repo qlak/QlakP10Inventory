@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.baza1234.qlakp10inventory.MainActivity">
+
+    <!-- Upper Screen -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/button_dummy"
+            android:layout_width="45dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:src="@drawable/buttondummy"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/button_add"
+            android:layout_width="45dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:src="@drawable/buttonadd"
+            android:scaleType="fitXY"/>
+
+
+    </RelativeLayout>
+
+    <!-- Separator Line -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#2E2B40"/>
+
+    <!-- LIST VIEW WHOLE WINDOW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#DD000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#BB000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#2E2B40"
+            android:layout_gravity="top"/>
+
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#BB000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#AA000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:layout_gravity="top"/>
+
+        <!-- LIST VIEW INSIDE -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/listbackground">
+
+            <ListView
+                android:id="@+id/market_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Empty view is only visible when the list has no items. -->
+            <ImageView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#99000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#AA000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="#BB000000"
+            android:layout_gravity="top"/>
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="#DD000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#BB000000"
+            android:layout_gravity="top"/>
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="#2E2B40"
+            android:layout_gravity="top"/>
+    </LinearLayout>
+</LinearLayout>
